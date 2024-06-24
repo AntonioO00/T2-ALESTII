@@ -33,7 +33,7 @@ public class Main {
 
 
         List<Caixa> caixas = new ArrayList<>();
-        String caminhoArquivo = "arquivos//caixas_2000.txt";
+        String caminhoArquivo = "arquivos//caixas_10.txt";
 
         // Leitura do arquivo
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
@@ -44,10 +44,20 @@ public class Main {
                     int l = Integer.parseInt(dims[0]);
                     int w = Integer.parseInt(dims[1]);
                     int h = Integer.parseInt(dims[2]);
-                    caixas.add(new Caixa(l, w, h));
+
+                    System.out.println(dims[0]);
+                    System.out.println(dims[1]);
+                    System.out.println(dims[2]);
+
+                    if (caixas.add(new Caixa(l, w, h))) {
+                        System.out.println("Caixa adicionada\n");
+                    } else {
+                        System.out.println("Deu ruim '-'");
+                    }
                 }
             }
-        } catch (IOException e) {
+        } catch (
+                IOException e) {
             e.printStackTrace();
         }
 
