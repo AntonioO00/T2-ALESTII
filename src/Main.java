@@ -7,21 +7,31 @@ public class Main {
 
 
         List<Caixa> caixas = new ArrayList<>();
-        String caminhoArquivo = "caminho/para/o/arquivo.txt";// Substitua pelo caminho real do arquivo
+        String caminhoArquivo = "arquivos//caixas_1005.txt";
 
         // Leitura do arquivo
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
-            String linha;
+            String linha = br.readLine();
             while ((linha = br.readLine()) != null) {
                 String[] dims = linha.trim().split("\\s+");
                 if (dims.length == 3) {
                     int l = Integer.parseInt(dims[0]);
                     int w = Integer.parseInt(dims[1]);
                     int h = Integer.parseInt(dims[2]);
-                    caixas.add(new Caixa(l, w, h));
+
+                    System.out.println(dims[0]);
+                    System.out.println(dims[1]);
+                    System.out.println(dims[2]);
+
+                    if (caixas.add(new Caixa(l, w, h))) {
+                        System.out.println("Caixa adicionada\n");
+                    } else {
+                        System.out.println("Deu ruim '-'");
+                    }
                 }
             }
-        } catch (IOException e) {
+        } catch (
+                IOException e) {
             e.printStackTrace();
         }
 
