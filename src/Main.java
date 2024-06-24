@@ -4,6 +4,8 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
+
+
         List<Caixa> caixas = new ArrayList<>();
         String caminhoArquivo = "caminho/para/o/arquivo.txt";// Substitua pelo caminho real do arquivo
 
