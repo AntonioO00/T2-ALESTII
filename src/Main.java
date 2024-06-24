@@ -30,8 +30,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
+
+
         List<Caixa> caixas = new ArrayList<>();
-        String caminhoArquivo = "caminho/para/o/arquivo.txt"; // Substitua pelo caminho real do arquivo
+        String caminhoArquivo = "arquivos//caixas_2000.txt";
 
         // Leitura do arquivo
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
