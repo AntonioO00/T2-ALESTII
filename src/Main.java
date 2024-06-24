@@ -33,11 +33,11 @@ public class Main {
 
 
         List<Caixa> caixas = new ArrayList<>();
-        String caminhoArquivo = "arquivos//caixas_10.txt";
+        String caminhoArquivo = "arquivos//caixas_1005.txt";
 
         // Leitura do arquivo
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
-            String linha;
+            String linha = br.readLine();
             while ((linha = br.readLine()) != null) {
                 String[] dims = linha.trim().split("\\s+");
                 if (dims.length == 3) {
