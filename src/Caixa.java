@@ -1,11 +1,12 @@
-import java.util.Arrays;
 
+
+import java.util.Arrays;
 
 public class Caixa implements Comparable<Caixa> {
     int l, w, h;
 
     // Construtor que recebe as três dimensões e as ordena
-    Caixa(int l, int w, int h) {
+    public Caixa(int l, int w, int h) {
         int[] dims = {l, w, h};
         Arrays.sort(dims); // Ordenar as dimensões para facilitar comparações
         this.l = dims[0];
@@ -22,8 +23,7 @@ public class Caixa implements Comparable<Caixa> {
     }
 
     // Verificar se uma caixa pode conter outra
-    boolean podeConter(Caixa b) {
+    public boolean podeConter(Caixa b) {
         return this.l < b.l && this.w < b.w && this.h < b.h;
     }
 }
-
