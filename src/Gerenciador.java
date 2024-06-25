@@ -1,10 +1,10 @@
 import java.io.*;
 import java.util.*;
 
-public class GerenciadorCaixas {
+public class Gerenciador {
     private ArrayList<Caixa> caixas;
 
-    public GerenciadorCaixas() {
+    public Gerenciador() {
         caixas = new ArrayList<>();
     }
 
@@ -41,7 +41,7 @@ public class GerenciadorCaixas {
     }
 
     // Método para encontrar a maior sequência de caixas aninhadas
-    public int encontrarMaiorSequenciaAninhada() {
+    public int maiorSequencia() {
         int n = caixas.size();
         int[] dp = new int[n];
         Arrays.fill(dp, 1);
@@ -53,7 +53,6 @@ public class GerenciadorCaixas {
                 }
             }
         }
-
         int max = 1;
         for (int len : dp) {
             max = Math.max(max, len);
