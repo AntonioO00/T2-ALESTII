@@ -1,4 +1,4 @@
-Resumo do Trabalho
+# Resumo do Trabalho
 
 Você se inspirou em um filme e resolveu dar um presente criativo para sua sogra. O plano é colocar uma caixa dentro da outra até que ela encontre o presente na última caixa. Para isso, você baixou um catálogo de uma fábrica de caixas de papelão e precisa achar a maior sequência de caixas que podem ser colocadas uma dentro da outra. Seu trabalho consiste em processar catálogos de várias empresas e fornecer respostas para cada um deles, além de entregar um relatório com os seguintes pontos:
 
@@ -7,7 +7,7 @@ Você se inspirou em um filme e resolveu dar um presente criativo para sua sogra
     Resultados e tempos para os casos de teste que foram dados.
     Suas conclusões.
 
-Passos Detalhados para Realizar o Trabalho
+### Passos Detalhados para Realizar o Trabalho
 
     Entender o Problema
         O problema consiste em encontrar a maior sequência de caixas que podem ser aninhadas, ou seja, uma dentro da outra, com base nas dimensões fornecidas.
@@ -32,7 +32,7 @@ Passos Detalhados para Realizar o Trabalho
         Apresente os resultados obtidos e os tempos de execução para os casos de teste.
         Escreva suas conclusões sobre a solução implementada.
 
-Estrutura do Relatório
+### Estrutura do Relatório
 
     Descrição do Problema
         Explique que você precisa encontrar a maior sequência de caixas que podem ser aninhadas, dado um catálogo com as dimensões das caixas.
