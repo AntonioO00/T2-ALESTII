@@ -8,7 +8,6 @@ public class Gerenciador {
         caixas = new ArrayList<>();
     }
 
-    // Método para ler o arquivo
     public void lerArquivo(String caminhoArquivo) {
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
             String linha = br.readLine();
@@ -35,12 +34,10 @@ public class Gerenciador {
         }
     }
 
-    // Método para ordenar as caixas
     public void ordenarCaixas() {
         Collections.sort(caixas);
     }
 
-    // Método para encontrar a maior sequência de caixas aninhadas
     public int maiorSequencia() {
         int n = caixas.size();
         int[] dp = new int[n];
@@ -60,8 +57,4 @@ public class Gerenciador {
         return max;
     }
 
-    // Método para obter a lista de caixas
-    public List<Caixa> getCaixas() {
-        return caixas;
-    }
 }
